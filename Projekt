@@ -1,0 +1,40 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <time.h>
+void createTower()
+{
+int ** tablica = new int * [3]; //szerokosc wiezy z wymarem
+tablica[0] = new int [3];   //generowanie wymarow 
+tablica[1] = new int [3];   
+tablica[2] = new int [3];
+
+tablica[2][9] = 'X';
+printf("%5c",tablica[2][9]);
+}
+
+void shoot()
+{
+
+
+
+
+
+}
+
+void aftershoot()
+{
+// zwalniamy pamiec
+//delete [] tablica[0];
+//delete [] tablica[1];
+//delete [] tablica[2];
+//delete [] tablica;
+
+
+
+}
+int main()
+{
+
+
+}
