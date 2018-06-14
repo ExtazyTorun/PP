@@ -1,40 +1,105 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 #include <time.h>
-void createTower()
-{
-int ** tablica = new int * [3]; //szerokosc wiezy z wymarem
-tablica[0] = new int [3];   //generowanie wymarow 
-tablica[1] = new int [3];   
-tablica[2] = new int [3];
+#include <string.h>
+void przypisanie(int player[5]) //przypisanie wartosci
+{	
+	for (int i=0; i<5; i++)
+	{
+	if (player[i]='1') printf("As serce");
+	if (player[i]='2') printf("As wino");
+	if (player[i]='3')printf("As karo");
+	if (player[i]='4')printf("As żołądź");
+	if (player[i]='5')printf("Król serce");
+	if (player[i]='6')printf("Król wino");
+	if (player[i]='7')printf("Król karo");
+	if (player[i]='8')printf("Król żołądź");
+	if (player[i]='9')printf("Dama serce");
+	if (player[i]='q')printf("Dama karo");
+	if (player[i]='w')printf("Dama wino");
+	if (player[i]='e')printf("Dama żołądź");
+	if (player[i]='r')printf("Walet serce");
+	if (player[i]='t')printf("Walec wino");
+	if (player[i]='y')printf("Walet karo");
+	if (player[i]='u')printf("Walet żołądź");
+	if (player[i]='i')printf("10 serce");
+	if (player[i]='o')printf("10 wino");
+	if (player[i]='p')printf("10 karo");
+	if (player[i]='a')printf("10 żołądź");
+	if (player[i]='s')printf("9 wino");
+	if (player[i]='d')printf("9 serce");
+	if (player[i]='f')printf("9 karo");
+	if (player[i]='g')printf("9 żołądź");
+	if (player[i]='h')printf("8 wino");
+	if (player[i]='j')printf("8 serce");
+	if (player[i]='k')printf("8 karo");
+	if (player[i]='l')printf("8 żołądź");
+	if (player[i]='z')printf("7 wino");
+	if (player[i]='x')printf("7 serce");
+	if (player[i]='c')printf("7 karo");
+	if (player[i]='v')printf("7 żołądź");
+	if (player[i]='b')printf("6 wino");
+	if (player[i]='n')printf("6 serce");
+	if (player[i]='m')printf("6 karo");
+	if (player[i]='[')printf("6 żołądź");
+	if (player[i]=']')printf("5 serce");
+	if (player[i]='|')printf("5 wino");
+	if (player[i]='<')printf("5 karo");
+	if (player[i]='>')printf("5 żołądź");
+	if (player[i]=',')printf("4 wino");
+	if (player[i]='.')printf("4 serce");
+	if (player[i]='?')printf("4 karo");
+	if (player[i]='/')printf("4 żołądź");
+	if (player[i]='!')printf("3 wino");
+	if (player[i]='@')printf("3 serce");
+	if (player[i]='#')printf("3 karo");
+	if (player[i]='$')printf("3 żołądź");
+	if (player[i]='%')printf("2 wino");
+	if (player[i]='^')printf("2 karo");
+	if (player[i]='!')printf("2 serce");
+	if (player[i]='*')printf("2 żołądź");
 
-tablica[2][9] = 'X';
-printf("%5c",tablica[2][9]);
+	}
+		//player[i]=getch();
 }
 
-void shoot()
-{
 
 
 
 
 
-}
-
-void aftershoot()
-{
-// zwalniamy pamiec
-//delete [] tablica[0];
-//delete [] tablica[1];
-//delete [] tablica[2];
-//delete [] tablica;
-
-
-
-}
 int main()
-{
+{	
+	int player[5]; 
+	int los;
+	int karty[52]= {'1','2','3','4',
+					'5','6','7','8',
+					'9','a','q','w',
+					'e','r','t','y',
+					'u','i','o','p',
+					'a','s','d','f',
+					'g','h','j','k',
+					'l','z','x','c',
+					'v','b','n','m',
+					'[',']','|','<',
+					'>',',','.','?',
+					'/','!','@','#',
+					'$','%','^','*',};
+	srand(time(NULL));
+	
 
+	
+	for (int i=0; i<5; i++)
+	{
+			los = rand()%52;
+			player[i] = karty[los];
+	//		printf("%c\n", player[i]);
+	}//losowanie 5 kart
 
+	
+	przypisanie(player);
+	
+	
 }
+
+
