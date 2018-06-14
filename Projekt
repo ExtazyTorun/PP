@@ -2,66 +2,96 @@
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
-void przypisanie(int player[5]) //przypisanie wartosci
+void przypisanie(int player[5]) //przypisanie do wartosci konkretnych kart
 {	
+	printf("Twoje karty:");
 	for (int i=0; i<5; i++)
 	{
-	if (player[i]='1') printf("As serce");
-	if (player[i]='2') printf("As wino");
-	if (player[i]='3')printf("As karo");
-	if (player[i]='4')printf("As żołądź");
-	if (player[i]='5')printf("Król serce");
-	if (player[i]='6')printf("Król wino");
-	if (player[i]='7')printf("Król karo");
-	if (player[i]='8')printf("Król żołądź");
-	if (player[i]='9')printf("Dama serce");
-	if (player[i]='q')printf("Dama karo");
-	if (player[i]='w')printf("Dama wino");
-	if (player[i]='e')printf("Dama żołądź");
-	if (player[i]='r')printf("Walet serce");
-	if (player[i]='t')printf("Walec wino");
-	if (player[i]='y')printf("Walet karo");
-	if (player[i]='u')printf("Walet żołądź");
-	if (player[i]='i')printf("10 serce");
-	if (player[i]='o')printf("10 wino");
-	if (player[i]='p')printf("10 karo");
-	if (player[i]='a')printf("10 żołądź");
-	if (player[i]='s')printf("9 wino");
-	if (player[i]='d')printf("9 serce");
-	if (player[i]='f')printf("9 karo");
-	if (player[i]='g')printf("9 żołądź");
-	if (player[i]='h')printf("8 wino");
-	if (player[i]='j')printf("8 serce");
-	if (player[i]='k')printf("8 karo");
-	if (player[i]='l')printf("8 żołądź");
-	if (player[i]='z')printf("7 wino");
-	if (player[i]='x')printf("7 serce");
-	if (player[i]='c')printf("7 karo");
-	if (player[i]='v')printf("7 żołądź");
-	if (player[i]='b')printf("6 wino");
-	if (player[i]='n')printf("6 serce");
-	if (player[i]='m')printf("6 karo");
-	if (player[i]='[')printf("6 żołądź");
-	if (player[i]=']')printf("5 serce");
-	if (player[i]='|')printf("5 wino");
-	if (player[i]='<')printf("5 karo");
-	if (player[i]='>')printf("5 żołądź");
-	if (player[i]=',')printf("4 wino");
-	if (player[i]='.')printf("4 serce");
-	if (player[i]='?')printf("4 karo");
-	if (player[i]='/')printf("4 żołądź");
-	if (player[i]='!')printf("3 wino");
-	if (player[i]='@')printf("3 serce");
-	if (player[i]='#')printf("3 karo");
-	if (player[i]='$')printf("3 żołądź");
-	if (player[i]='%')printf("2 wino");
-	if (player[i]='^')printf("2 karo");
-	if (player[i]='!')printf("2 serce");
-	if (player[i]='*')printf("2 żołądź");
-
+	if (player[i]=='1') printf("\nAs serce");
+	if (player[i]=='2') printf("\nAs wino");
+	if (player[i]=='3')printf("\nAs karo");
+	if (player[i]=='4')printf("\nAs trefl");
+	if (player[i]=='5')printf("\nKról serce");
+	if (player[i]=='6')printf("\nKról wino");
+	if (player[i]=='7')printf("\nKról karo");
+	if (player[i]=='8')printf("\nKról trefl");
+	if (player[i]=='9')printf("\nDama serce");
+	if (player[i]=='q')printf("\nDama karo");
+	if (player[i]=='w')printf("\nDama wino");
+	if (player[i]=='e')printf("\nDama trefl");
+	if (player[i]=='r')printf("\nWalet serce");
+	if (player[i]=='t')printf("\nWalec wino");
+	if (player[i]=='y')printf("\nWalet karo");
+	if (player[i]=='u')printf("\nWalet trefl");
+	if (player[i]=='i')printf("\n10 serce");
+	if (player[i]=='o')printf("\n10 wino");
+	if (player[i]=='p')printf("\n10 karo");
+	if (player[i]=='a')printf("\n10 trefl");
+	if (player[i]=='s')printf("\n9 wino");
+	if (player[i]=='d')printf("\n9 serce");
+	if (player[i]=='f')printf("\n9 karo");
+	if (player[i]=='g')printf("\n9 trefl");
+	if (player[i]=='h')printf("\n8 wino");
+	if (player[i]=='j')printf("\n8 serce");
+	if (player[i]=='k')printf("\n8 karo");
+	if (player[i]=='l')printf("\n8 trefl");
+	if (player[i]=='z')printf("\n7 wino");
+	if (player[i]=='x')printf("\n7 serce");
+	if (player[i]=='c')printf("\n7 karo");
+	if (player[i]=='v')printf("\n7 trefl");
+	if (player[i]=='b')printf("\n6 wino");
+	if (player[i]=='n')printf("\n6 serce");
+	if (player[i]=='m')printf("\n6 karo");
+	if (player[i]=='[')printf("\n6 trefl");
+	if (player[i]==']')printf("\n5 serce");
+	if (player[i]=='|')printf("\n5 wino");
+	if (player[i]=='<')printf("\n5 karo");
+	if (player[i]=='>')printf("\n5 trefl");
+	if (player[i]==',')printf("\n4 wino");
+	if (player[i]=='.')printf("\n4 serce");
+	if (player[i]=='?')printf("\n4 karo");
+	if (player[i]=='/')printf("\n4 trefl");
+	if (player[i]=='!')printf("\n3 wino");
+	if (player[i]=='@')printf("\n3 serce");
+	if (player[i]=='#')printf("\n3 karo");
+	if (player[i]=='$')printf("\n3 trefl");
+	if (player[i]=='%')printf("\n2 wino");
+	if (player[i]=='^')printf("\n2 karo");
+	if (player[i]=='!')printf("\n2 serce");
+	if (player[i]=='*')printf("\n2 trefl");
 	}
-		//player[i]=getch();
 }
+/*void check(int karty[52])
+{
+	if(player[i]==''
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}*/
+struct hand
+{
+	int karta;
+
+};
+
+void createhand(struct hand tab[],int n,int player[5])
+{
+    system("cls");
+    int i;
+    for(i=0; i<n; i++){
+        tab[i].karta[0]=player[i]
+}
+}
+
+	
+
+
 
 
 
@@ -70,6 +100,8 @@ void przypisanie(int player[5]) //przypisanie wartosci
 
 int main()
 {	
+    struct hand tab[5]; 
+    int n=5;
 	int player[5]; 
 	int los;
 	int karty[52]= {'1','2','3','4',
